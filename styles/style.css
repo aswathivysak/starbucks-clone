@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+   
+}
+body{
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400; 
+    color:  rgba(0, 0, 0, .87);
+}
+.nav-bar{
+    font-size: 14px;
+    padding: 11px 20px 11px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07);
+}
+
+/* nav left section */
+.log-img{
+    width:49px;
+    height: 49px;
+    margin-right: 15px;
+}
+
+
+.left-nav{
+    height: 80px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+   
+}
+.left-nav div{
+    margin: 0 0 0 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.left-nav div:hover, .find-a-store:hover{
+    color: #00754a;
+}
+/* right nav */
+
+.right-nav{
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.right-nav .find-a-store{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+.sign-in,.join{
+   margin: 15px;
+   padding: 7px 16px;
+   border: 1px solid black;
+   border-radius: 50px;
+   font-weight: 600;
+   cursor: pointer;
+   background: none;
+   
+}
+.btn-dark{
+    background-color: black;
+    color: white;
+}
+.btn-dark:hover{
+    background-color: #333;
+    
+}
+.btn-light:hover{
+    
+    background-color: rgba(0, 0, 0, 0.06);
+}
+@media (min-width:780px) {
+    .mob-nav{
+        display: none;
+    }
+    
+}
+@media (max-width:780px) {
+    .left-nav{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    .mob-nav{
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 24px;
+      }
+    .material-icons{
+        padding-right: 24px;
+    }
+    
+}
